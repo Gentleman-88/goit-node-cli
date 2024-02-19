@@ -12,7 +12,7 @@ program.parse();
 
 const options = program.opts();
 
-const contacts = require("./contacts");
+const contacts = require("./contacts.js");
 
 // TODO: рефакторити
 async function invokeAction({ action, id, name, email, phone }) {
