@@ -2,7 +2,7 @@ import { readFile, writeFile } from "fs/promises";
 import path from "path";
 import { nanoid } from "nanoid";
 
-const contactsPath = path.join(__dirname, "/db/contacts.json");
+const contactsPath = path.join("/db/contacts.json");
 
 export async function listContacts() {
   const data = await readFile(contactsPath, "utf-8");
